@@ -4,10 +4,12 @@ import { Avatar, Box, Container, Heading, Stack, Text } from "@chakra-ui/react";
 export default function Home() {
   return (
     <Container 
-      bg='neutral.200'
       display='grid'
       fontFamily="'Barlow Semi Condensed', sans-serif"
-      gap={5}
+      gap={7}
+      gridTemplateColumns={[ '1fr', '1fr', '1fr', '1fr 1fr 1fr 1fr']}
+      gridTemplateRows={['auto', 'auto', 'auto', '1fr 1fr']}
+      maxW='80%'
       paddingX={5}
       paddingY={16}
     >
@@ -19,6 +21,8 @@ export default function Home() {
         bgPos='90% 0' 
         bgRepeat='no-repeat'
         borderRadius={10}
+        gridColumn={[ '1 / 2', '1 / 2', '1 / 2', '1 / 3']}
+        gridRow={[ 'auto', 'auto', 'auto', '1 / 2']}
         padding={8}
         spacing={5}
       >
@@ -43,8 +47,11 @@ export default function Home() {
       <Stack 
         bg='primary.200' 
         borderRadius={10}
+        gridColumn={[ '1 / 2', '1 / 2', '1 / 2', '3 / 4']}
+        gridRow={[ 'auto', 'auto', 'auto', '1 / 2']}
         padding={8}
         spacing={5}
+
       >
         <Box alignItems='center' display='flex' flexDirection='row'  gap={3}>
           <Avatar name="Jonathan Walters" src="image-jonathan.jpg" />
@@ -67,6 +74,8 @@ export default function Home() {
       <Stack 
         bg='primary.400' 
         borderRadius={10}
+        gridColumn={[ '1 / 2', '1 / 2', '1 / 2', '1 / 2']}
+        gridRow={[ 'auto', 'auto', 'auto', '2 / 3']}
         padding={8}
         spacing={5}
       >
@@ -91,8 +100,11 @@ export default function Home() {
       <Stack 
         bg='primary.300' 
         borderRadius={10}
+        gridColumn={[ '1 / 2', '1 / 2', '1 / 2', '2 / 4']}
+        gridRow={[ 'auto', 'auto', 'auto', '2 / 3']}
         padding={8}
         spacing={5}
+
       >
         <Box alignItems='center' display='flex' flexDirection='row'  gap={3}>
           <Avatar border='2px solid hsl(263, 55%, 52%)' name="Patrick Abrams" src="image-patrick.jpg" />
@@ -115,6 +127,8 @@ export default function Home() {
       <Stack 
         bg='primary.400' 
         borderRadius={10}
+        gridColumn={[ '1 / 2', '1 / 2', '1 / 2', '4 / 5']}
+        gridRow={[ 'auto', 'auto', 'auto', '1 / 3']}
         padding={8}
         spacing={5}
       >
